@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<div class="posts">
+	<div class="post">
+	  <div class="author">
+	    <div class="avatar"><img src="./avatar/{{ site.avatar }}"></div>
+	    <div class="info">
+	      <ul>
+	        <li><a href="{{site.url}}">{{site.author}}</a></li>
+	        <li>{{ site.url }}</li>
+                <li>{{ site.email }}</li>
+	       </ul>
+	    </div>
+	  </div>
+	  <div class="content">
+    <p class="ctitle">{{ page.title }}</p>
+    	  {{ content }}
+	  </div>
+	</div>
+</div>

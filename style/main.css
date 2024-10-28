@@ -7,8 +7,12 @@
 .app-d {height: 10em;}
 .app-f {font-size: 62.5%;}
 .app-g {width: 100%;}
-.app-i {margin-bottom: -3px;}
+.app-i {margin-bottom: -4px;}
 .app-i img {width:100%;height: 10em;}
+.app-j {color: #fff;line-height: 5em;}
+#logo {margin-left: 80px;margin-top: 40px;}
 @media screen and (max-width: 800px) {
 	.app-i {display:none;}
+	#logo {margin-top: 15px;}
+	.app-j {line-height: 10em;}
 }

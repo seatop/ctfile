@@ -1,28 +1,21 @@
 ---
 layout: default
 ---
-<div class="posts">
-	<div class="post">
-	  <div class="author">
-	    <div class="avatar"><img src="{{ site.url }}/avatar/{{ site.avatar }}"></div>
-	    <div class="info">
-	      <ul>
-	        <li><a href="{{site.url}}">{{site.author}}</a></li>
-	        <li>{{ site.url }}</li>
-                <li>{{ site.email }}</li>	        
-	      </ul>
-	    </div>
-	  </div>
-	  <div class="content">
-    <p class="ctitle">{{ page.title }}</p>
-    <p class="ctime">{{ page.date | date: "%Y/%m/%d" }}</p>
-	  {{ content }}
-	  </div>
-	  {% if page.previous %}
-	  <p class="pn">← <a href="{{ page.previous.url }}">{{ page.previous.title }}，{{ page.previous.date | date: "%Y-%m-%d" }}</a></p>
-	  {% endif%}
-	  {% if page.next %}
-	  <p class="pn"><a href="{{ page.next.url }}">{{ page.next.title }}，{{ page.next.date | date: "%Y-%m-%d" }}</a> →</p>
-	  {% endif%}
-	</div>
+<div class="app-m app-ib">
+<p class="app-ab app-da app-fa app-ja">{{ page.title }}</p>
+<div class="app-c app-jc app-ac app-fb app-ia">{{ page.content }}</div>
+<div class="app-c app-jc app-ac app-fb app-ia"><p>文件类型：{{ page.type }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;访问密码：{% if page.password %}{{ page.password }}{% else %}{{ site.password }}{% endif %}</p>
+<p> 如有疑问，请联系：{{ site.email }}</p></div>
+<p class="app-ad app-da app-fa app-ja"><a href="{{ site.down }}\d\{{ page.link }}" target="_blank">网盘下载</a></p>
 </div>
+ {% if page.previous %}
+<div class="app-m app-ib">
+<p class="app-ab app-da app-fa app-ja">← <a href="{{ page.previous.url }}">{{ page.previous.title }}</a></p>
+</div>
+ {% endif%}
+ {% if page.next %}
+<div class="app-m app-ib">
+<p class="app-ad app-da app-fa app-ja"><a href="{{ page.next.url }}">{{ page.next.title }}</a> →</p>
+</div>
+ {% endif%}
+	

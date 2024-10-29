@@ -1,13 +1,13 @@
 ---
 layout: index
-title: 首页
+title: 网站首页
 ---
-<div class="app-m">
+<div class="app-m app-ib">
 {% for post in site.posts  limit: site.index_num %}
-<p class="app-ab app-da app-fa app-ja"><a href="{{ post.url }}">{{ post.title }}</a></p>
+<p class="app-ab app-da app-fa app-ja app-ic"><a href="{{ post.url }}">{{ post.title }}</a></p>
 <div class="app-c app-jc app-ac app-fb app-ia">{{ post.content }}</div>
-<div class="app-c app-jc app-ac app-fb app-ia">如有疑问，请联系 {{ site.email }}</div>
-<p class="app-ad app-da app-fa app-ja"><a href="{{ site.down }}\d\{{ post.link }}" target="_blank">网盘下载(访问密码
-{% if post.password %} {{ post.password }} {% else %} {{ site.password }} {% endif %})</a></p>
+<div class="app-c app-jc app-ac app-fb app-ia"><p>文件类型：{{ post.type }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;访问密码：{% if post.password %}{{ post.password }}{% else %}{{ site.password }}{% endif %}</p>
+<p> 如有疑问，请联系：{{ site.email }}</p></div>
+<p class="app-ad app-da app-fa app-ja"><a href="{{ site.down }}\d\{{ post.link }}" target="_blank">网盘下载</a></p>
 {% endfor %}
 </div>

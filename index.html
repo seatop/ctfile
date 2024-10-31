@@ -8,6 +8,6 @@ title: 网站首页
 <div class="app-c app-jc app-ac app-fb app-ia">{{ post.content }}</div>
 <div class="app-c app-jc app-ac app-fb app-ia"><p>文件类型：{{ post.type }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;访问密码：{% if post.password %}{{ post.password }}{% else %}{{ site.password }}{% endif %}</p>
 <p> 如有疑问，请联系：{{ site.email }}</p></div>
-<p class="app-ad app-da app-fa app-ja"><a href="{{ site.down }}\d\{{ post.link }}" target="_blank">网盘下载</a></p>
+<p class="app-ad app-da app-fa app-ja"><a href="{{ site.down }}/{{ post.link }}" target="_blank">网盘下载</a></p>
 {% endfor %}
 </div>

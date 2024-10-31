@@ -6,7 +6,7 @@ layout: default
 <div class="app-c app-jc app-ac app-fb app-ia">{{ page.content }}</div>
 <div class="app-c app-jc app-ac app-fb app-ia"><p>文件类型：{{ page.type }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;访问密码：{% if page.password %}{{ page.password }}{% else %}{{ site.password }}{% endif %}</p>
 <p> 如有疑问，请联系：{{ site.email }}</p></div>
-<p class="app-ad app-da app-fa app-ja"><a href="{{ site.down }}\d\{{ page.link }}" target="_blank">网盘下载</a></p>
+<p class="app-ad app-da app-fa app-ja"><a href="{{ site.down }}/{{ page.link }}" target="_blank">网盘下载</a></p>
 </div>
  {% if page.previous %}
 <div class="app-m app-ib">

@@ -1,0 +1,45 @@
+* {margin: 0; padding: 0;}
+.app-a {background-color: #fff;}
+.app-aa {background-color: #7f8cb6;}
+.app-ab {background-color: #304852;}
+.app-ac {background-color: #637694;}
+.app-ad {background-color: #405a73;}
+
+.app-b {}
+
+.app-c {text-align: left;}
+.app-ca {text-align: center;}
+
+.app-d {height: 10em;}
+.app-da {height: 4em;}
+
+.app-f {font-size: 62.5%;}
+.app-fa {font-size: 2em;line-height: 4em;}
+.app-fb {font-size: 1.5em;line-height: 2em;}
+.app-fc {font-size: 2em;line-height: 16em;}
+
+.app-g {width: 100%;}
+
+.app-i {margin-bottom: -4px;}
+.app-i img {width:100%;height: 10em;}
+.app-ia {padding: 1em;}
+.app-ib  {margin: 1em auto;}
+.app-ic {margin-top: 0.5em;}
+
+.app-j {color: #fff;line-height: 5em;}
+.app-ja, .app-ja a {color: #fff;}
+.app-jb {color: #405a73;}
+.app-jc {color: #fff;}
+
+.app-k {min-height: 80vh;}
+
+.app-m {width: 800px;}
+.app-m a {text-decoration-line: none;}
+
+#logo {margin-left: 80px;margin-top: 40px;}
+@media screen and (max-width: 800px) {
+	.app-i {display:none;}
+	#logo {margin-top: 25px;width: 100px;margin-left:100px;}
+	.app-j {line-height: 10em;}
+	.app-m {width: 100%;}
+}

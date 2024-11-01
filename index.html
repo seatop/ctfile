@@ -3,21 +3,11 @@ layout: index
 title: 网站首页
 ---
 <div class="app-m app-ib">
-<p class="app-ab app-da app-fa app-ja app-ic">SCI-Hub</p>
+<p class="app-ab app-da app-fa app-ja app-ic">{{site.n-name}}</p>
 <div class="app-c app-jc app-ac app-fb app-ia">	
-创建背景：<br />
-SCI-Hub 由哈萨克斯坦的亚历山德拉・埃尔巴金（Alexandra Elbakyan）于 2011 年创立。创立的原因是为了应对学术期刊论文付费墙带来的高昂获取成本问题，让更多人能够免费获取到科学研究论文。埃尔巴金认为，设置论文付费墙限制了很多人获取知识的权利，违背了联合国《世界人权宣言》第 27 条中每个人都有分享科学进步及其利益的权利，所以她致力于打破这种学术资源的垄断。<br />
-资源储备：截至 2022 年 7 月，SCI-Hub 已报告其收藏量超过 8800 万篇文献。它能够提供大量的研究论文，包括各个学科领域的文献资源，并且对有 DOI（数字对象标识符）号的学术出版物覆盖率很高。<br />
-使用方法：<br />
-文献的链接搜索：先在谷歌学术等搜索引擎里搜索相关的文献关键词，找出想查看的文献链接，复制链接再粘贴到 SCI-Hub 里面进行链接生成，就能看到该链接的文献下载地址。不过要注意链接的完整性，不完整的链接可能无法搜索到文献。<br />
-DOI 搜索：每一篇被收录的文献都有独一无二的 DOI 号。直接在 SCI-Hub 站点页面输入文献的 DOI 号并点击 “open” 按钮，即可尝试下载论文。<br />
-PubMed 号搜索：在 PubMed 查到的每一篇文献都有一个自己的 PubMed 号，在 SCI-Hub 网站将该号输入到输入框中，然后回车或点击 “open” 按钮，可尝试下载对应的论文。<br />
-面临的问题：<br />
-版权争议：SCI-Hub 的行为引发了巨大的版权争议，它绕过了出版商的付费墙，未经授权提供论文下载，侵犯了出版商的权益，因此遭到了许多出版社和法律机构的起诉。<br />
-网站访问不稳定：由于版权问题和其他因素，SCI-Hub 的域名经常遭到封杀，导致其网址经常变化，对外开放的域名不稳定，可能会出现无法访问或访问速度慢的情况。<br />
-尽管 SCI-Hub 在获取学术资源方面为很多人提供了便利，但使用时仍需注意遵守相关的法律法规和学术道德规范。在合法的范围内，科研人员和学生可以利用它获取更多的学术信息，推动科学研究的发展。	
+{{ site.n-content }}
 </div>
-<p class="app-ad app-da app-fa app-ja"><a href="https://www.wellesu.com/" target="_blank">打开链接</a></p>
+<p class="app-ad app-da app-fa app-ja">最近更新</p>
 
 <div class="app-m app-ib">
 {% for post in site.posts  limit: site.index_num %}

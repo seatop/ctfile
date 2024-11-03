@@ -39,7 +39,8 @@
 #logo {margin-left: 80px;margin-top: 40px;}
 @media screen and (max-width: 800px) {
 	.app-i {display:none;}
-	#logo {margin-top: 25px;width: 100px;margin-left:100px;}
+        .app-g {text-align: center;}
+	#logo {margin-top: 25px;width: 100px;margin-left:0px;}
 	.app-j {line-height: 10em;}
 	.app-m {width: 100%;}
 }

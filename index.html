@@ -3,10 +3,12 @@ layout: index
 title: 网站首页
 ---
 <div class="app-m app-ib">
+{% if site.n-name %}
 <p class="app-ab app-da app-fa app-ja app-ic">{{site.n-name}}</p>
 <div class="app-c app-jc app-ac app-fb app-ia">	
 {{ site.n-content }}
 </div>
+{% endif %}
 <p class="app-ad app-da app-fa app-ja">最近更新</p>
 
 <div class="app-m app-ib">
